@@ -1,4 +1,3 @@
-#Credits to 'nazarpechka' for helping out with this code
 
 import string, random, os, sys, _thread, httplib2, time,magic,mimetypes
 # from PIL import Image
@@ -26,7 +25,7 @@ def scrape_pictures(thread):
 
             filename = 'img/'+url.rsplit('/', 1)[-1]
             # print (filename)
-
+ 
             h = httplib2.Http('.cache' + thread)
             response, content = h.request(url)
             
